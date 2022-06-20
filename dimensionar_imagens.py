@@ -62,7 +62,6 @@ def reverter(caminho, whidt, height):
             nova_imagem.save(
                 novo_caminho,
                 optimize=True,
-                quality=100
             )
             print(f'{caminho_completo} voltou ao tamanho original')
             sleep(1)
@@ -84,5 +83,5 @@ if __name__ == '__main__':
             reverter(caminho_imagens, largura, altura)
 
     else:
-        largura = int(input('Qual largura da nova foto?'))
+        largura = int(input('Qual largura da nova foto? '))
         redimensionar(caminho_imagens, largura)
